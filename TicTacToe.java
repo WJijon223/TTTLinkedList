@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -28,7 +27,8 @@ public class TicTacToe {
 
         while (!board.isBoardFull() && !gameWon) {
             board.displayBoard();
-            System.out.println("Player " + this.currentPlayer + ", enter your move (1-9): ");
+            System.out.println("\n");
+            System.out.print("Player " + this.currentPlayer + ", enter your move (1-9): ");
             int move = scanner.nextInt();
 
             // Validate move and update board
@@ -47,8 +47,10 @@ public class TicTacToe {
         board.displayBoard();
 
         if (gameWon) {
+            System.out.println();
             System.out.println("Player " + this.currentPlayer + " wins!");
         } else {
+            System.out.println();
             System.out.println("It's a draw!");
         }
     }

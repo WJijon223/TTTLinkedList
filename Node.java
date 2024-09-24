@@ -1,7 +1,7 @@
-
 public class Node {
     String data;  // Could be 'X', 'O', or empty
     Node next;
+    int position;
 
     // Constructor for a new node
     public Node(String data) {
